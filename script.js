@@ -2,30 +2,25 @@
   "use strict";
 
   var ART = [
-    { slug: "evening-field", title: "Evening Field", category: "Landscape" },
-    { slug: "state-house", title: "State House", category: "Architecture" },
-    { slug: "in-flight", title: "In Flight", category: "Wildlife" },
-    { slug: "birches-in-bloom", title: "Birches in Bloom", category: "Landscape" },
+    { slug: "ursuline-convent-trois-rivieres", title: "Ursuline Convent, Trois-Rivieres", category: "Architecture" },
     { slug: "piping-plover", title: "Piping Plover", category: "Wildlife" },
-    { slug: "daisies", title: "Daisies", category: "Floral" },
-    { slug: "breaching", title: "Breaching", category: "Wildlife" },
-    { slug: "celosia", title: "Celosia", category: "Floral" },
-    { slug: "houseplant-portrait", title: "Houseplant Portrait", category: "Whimsical" },
-    { slug: "sliced-watermelon", title: "Sliced Watermelon", category: "Still Life" },
-    { slug: "flowers-in-a-basket", title: "Flowers in a Basket", category: "Still Life" },
-    { slug: "boy-and-guinea-pig", title: "Boy and Guinea Pig", category: "Portrait" },
-    { slug: "cottage-and-sunflowers", title: "Cottage & Sunflowers", category: "Landscape" },
-    { slug: "autumn-reflection", title: "Autumn Reflection", category: "Landscape" },
-    { slug: "lone-maple", title: "Lone Maple", category: "Landscape" },
-    { slug: "cat-by-the-fence", title: "Cat by the Fence", category: "Wildlife" },
-    { slug: "island-sunset", title: "Island Sunset", category: "Landscape" },
-    { slug: "cherry-blossoms", title: "Cherry Blossoms", category: "Landscape" },
-    { slug: "dogwood-branch", title: "Dogwood Branch", category: "Floral" },
+    { slug: "towering-clouds", title: "Towering Clouds", category: "Landscape" },
+    { slug: "lighthouse-in-2-colors", title: "Lighthouse in 2 Colors", category: "Architecture" },
+    { slug: "rich-cabins", title: "Rich Cabins", category: "Landscape" },
+    { slug: "the-menace", title: "The Menace", category: "Whimsical" },
+    { slug: "alley-riders", title: "Alley Riders", category: "Landscape" },
+    { slug: "buttoning", title: "Buttoning", category: "Portrait" },
+    { slug: "sleep-sack", title: "Sleep Sack", category: "Portrait" },
     { slug: "windsor-chair", title: "Windsor Chair", category: "Still Life" },
     { slug: "standing-stones", title: "Standing Stones", category: "Landscape" },
-    { slug: "lupines", title: "Lupines", category: "Floral" },
-    { slug: "village-street", title: "Village Street", category: "Architecture" },
-    { slug: "curled-up", title: "Curled Up", category: "Wildlife" }
+    { slug: "bugleweed", title: "Bugleweed", category: "Floral" },
+    { slug: "harpers-ferry", title: "Harpers Ferry", category: "Architecture" },
+    { slug: "happy-place", title: "Happy Place", category: "Wildlife" },
+    { slug: "cobbosseecontee", title: "Cobbosseecontee", category: "Landscape" },
+    { slug: "toe-beans", title: "Toe Beans", category: "Wildlife" },
+    { slug: "low-tide", title: "Low Tide", category: "Landscape" },
+    { slug: "bundled-up", title: "Bundled Up", category: "Portrait" },
+    { slug: "sycamore", title: "Sycamore", category: "Landscape" }
   ];
 
   var masonry = document.getElementById("masonry");
