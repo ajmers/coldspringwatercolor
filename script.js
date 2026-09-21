@@ -2,6 +2,7 @@
   "use strict";
 
   var ART = [
+    { slug: "jack", title: "Jack", category: "Wildlife" },
     { slug: "ursuline-convent-trois-rivieres", title: "Ursuline Convent, Trois-Rivieres", category: "Architecture" },
     { slug: "piping-plover", title: "Piping Plover", category: "Wildlife" },
     { slug: "towering-clouds", title: "Towering Clouds", category: "Landscape" },
