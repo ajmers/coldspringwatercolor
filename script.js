@@ -2,6 +2,10 @@
   "use strict";
 
   var ART = [
+    { slug: "ring-place-and-little-costilla", title: "Ring Place and Little Costilla", category: "Landscape" },
+    { slug: "stone-barn-in-autumn", title: "Stone Barn in Autumn", category: "Architecture" },
+    { slug: "three-sheep", title: "Three Sheep", category: "Landscape" },
+    { slug: "fortress-louisbourg", title: "Fortress Louisbourg", category: "Architecture" },
     { slug: "jack", title: "Jack", category: "Wildlife" },
     { slug: "ursuline-convent-trois-rivieres", title: "Ursuline Convent, Trois-Rivieres", category: "Architecture" },
     { slug: "piping-plover", title: "Piping Plover", category: "Wildlife" },
