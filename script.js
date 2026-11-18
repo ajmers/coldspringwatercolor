@@ -2,6 +2,7 @@
   "use strict";
 
   var ART = [
+    { slug: "walk-in-the-woods", title: "Walk in the Woods", category: "Landscape" },
     { slug: "ring-place-and-little-costilla", title: "Ring Place and Little Costilla", category: "Landscape" },
     { slug: "stone-barn-in-autumn", title: "Stone Barn in Autumn", category: "Architecture" },
     { slug: "three-sheep", title: "Three Sheep", category: "Landscape" },
