@@ -21,7 +21,7 @@
     { slug: "standing-stones", title: "Standing Stones", category: "Landscape" },
     { slug: "bugleweed", title: "Bugleweed", category: "Floral" },
     { slug: "harpers-ferry", title: "Harpers Ferry", category: "Architecture" },
-    { slug: "happy-place", title: "Happy Place", category: "Wildlife" },
+    { slug: "happy-place", title: "Happy Place", category: "Wildlife", large: true },
     { slug: "cobbosseecontee", title: "Cobbosseecontee", category: "Landscape" },
     { slug: "toe-beans", title: "Toe Beans", category: "Wildlife" },
     { slug: "low-tide", title: "Low Tide", category: "Landscape" },
