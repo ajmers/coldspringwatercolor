@@ -6,7 +6,7 @@
     { slug: "ring-place-and-little-costilla", title: "Ring Place and Little Costilla", category: "Landscape" },
     { slug: "stone-barn-in-autumn", title: "Stone Barn in Autumn", category: "Architecture" },
     { slug: "three-sheep", title: "Three Sheep", category: "Landscape" },
-    { slug: "fortress-louisbourg", title: "Fortress Louisbourg", category: "Architecture" },
+    { slug: "fortress-louisbourg", title: "Fortress Louisbourg", category: "Architecture", large: true },
     { slug: "jack", title: "Jack", category: "Wildlife" },
     { slug: "ursuline-convent-trois-rivieres", title: "Ursuline Convent, Trois-Rivieres", category: "Architecture" },
     { slug: "piping-plover", title: "Piping Plover", category: "Wildlife" },
@@ -34,12 +34,14 @@
 
   ART.forEach(function (art, i) {
     var card = document.createElement("article");
-    card.className = "art-card";
+    card.className = "art-card" + (art.large ? " is-large" : "");
     card.dataset.category = art.category;
     card.dataset.index = i;
 
     var img = document.createElement("img");
-    img.src = "images/thumb/" + art.slug + ".jpg";
+    // Large cards display wider than the thumbnails, so use the full image.
+    img.src = "images/" + (art.large ? "full" : "thumb") + "/" + art.slug + ".jpg";
+    img.addEventListener("load", layoutMasonry);
     img.alt = art.title + " — original watercolor painting, " + art.category.toLowerCase();
     img.loading = "lazy";
 
@@ -53,6 +55,18 @@
   });
   masonry.appendChild(frag);
 
+  /* ---------- Masonry layout ---------- */
+  var GAP = 22;
+
+  function layoutMasonry() {
+    masonry.querySelectorAll(".art-card").forEach(function (card) {
+      card.style.gridRowEnd = "span " + Math.ceil(card.getBoundingClientRect().height + GAP);
+    });
+  }
+
+  layoutMasonry();
+  window.addEventListener("resize", layoutMasonry);
+
   /* ---------- Filters ---------- */
   var filterBtns = document.querySelectorAll(".filter-btn");
   filterBtns.forEach(function (btn) {
@@ -64,6 +78,7 @@
         var show = filter === "all" || card.dataset.category === filter;
         card.classList.toggle("is-hidden", !show);
       });
+      layoutMasonry();
     });
   });
 
