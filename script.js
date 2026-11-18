@@ -41,7 +41,10 @@
     var img = document.createElement("img");
     // Large cards display wider than the thumbnails, so use the full image.
     img.src = "images/" + (art.large ? "full" : "thumb") + "/" + art.slug + ".jpg";
-    img.addEventListener("load", layoutMasonry);
+    img.addEventListener("load", function () {
+      card.classList.toggle("is-tall", img.naturalHeight > img.naturalWidth);
+      layoutMasonry();
+    });
     img.alt = art.title + " — original watercolor painting, " + art.category.toLowerCase();
     img.loading = "lazy";
 

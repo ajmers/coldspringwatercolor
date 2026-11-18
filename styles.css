@@ -198,6 +198,11 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 @media (min-width: 640px) {
   .masonry { grid-template-columns: repeat(2, 1fr); }
   .art-card.is-large { grid-column: span 2; }
+  /* Tall paintings at full double width are too big, so mat them down. */
+  .art-card.is-large.is-tall img {
+    padding: 28px 15%;
+    background: var(--paper-deep);
+  }
 }
 @media (min-width: 980px) { .masonry { grid-template-columns: repeat(3, 1fr); } }
 
